@@ -4,9 +4,30 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.2.4</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
     <groupId>ru.yandex</groupId>
     <artifactId>early-spring-only</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <!--
+spring-boot-starter-web - это один из самых
+важных стартовых модулей в экосистеме Spring Boot,
+который предоставляет все необходимое для создания веб-приложений.
+Он включает в себя широкий набор зависимостей и конфигураций,
+которые позволяют вам быстро и легко начать разработку.
+            -->
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+    </dependencies>
 
     <properties>
         <maven.compiler.source>22</maven.compiler.source>
